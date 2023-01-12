@@ -1,0 +1,19 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Banana",
+            "text": "Post about bananas"
+        },
+        {
+            "id": 2,
+            "title": "Cars",
+            "text": "Post about Cars"
+        },
+        {
+            "id": 3,
+            "title": "Shoes",
+            "text": "Post about shoes"
+        }
+    ]
+}
