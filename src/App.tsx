@@ -3,6 +3,7 @@ import { Header } from "./components/Header"
 import { About } from "./pages/About"
 import { Contact } from "./pages/Contact"
 import { Home } from "./pages/Home"
+import { Post } from "./pages/Post"
 
 export function App() {
   return (
@@ -12,6 +13,8 @@ export function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/posts/:id" element={<Post/>}/>
+        <Route path="/posts" element={<Post/>}/>
       </Routes>
     </BrowserRouter>
   )
