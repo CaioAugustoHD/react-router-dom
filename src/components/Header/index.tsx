@@ -16,6 +16,9 @@ export function Header() {
                 <li>
                     <Link to={"/posts"}>Posts</Link>
                 </li>
+                <li>
+                    <Link to={"/redirect"}>Redirect</Link>
+                </li>
             </ul>
         </header>
     )
