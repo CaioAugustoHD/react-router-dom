@@ -1,10 +1,6 @@
 import { useLocation } from "react-router-dom"
-
-// interface PostProps {
-//     id: number,
-//     title: string,
-//     text: string
-// }
+import { Title } from "../../../styles/title";
+import { PostContainer, Text } from "./style";
 
 export function Post(){
 
@@ -12,9 +8,9 @@ export function Post(){
     const { state } = location;
 
     return (
-        <div>
-            <h2>{state.title}</h2>
-            <p>{state.text}</p>
-        </div>
+        <PostContainer>
+            <Title>{state.title}</Title>
+            <Text>{state.text}</Text>
+        </PostContainer>
     )
 }

@@ -1,5 +1,8 @@
 import { Link, Outlet, useParams, useSearchParams } from "react-router-dom"
+import { Item, Menu } from "../../styles/menu";
+import { Title } from "../../styles/title";
 import JSONposts from "./posts.json"
+import { PostsContainer } from "./style";
 
 interface PostProps {
     id: number,
@@ -15,16 +18,16 @@ export function Posts() {
     const posts = JSONposts.posts;
 
     return (
-        <div>
-            <h2>Post - {`Params: ${params.id}`} {`| QS Page: ${qs.get('page')}`}</h2>
+        <PostsContainer>
+            <Title>Post - {`Params: ${params.id}`} {`| QS Page: ${qs.get('page')}`}</Title>
 
-            <ul>
+            <Menu space="space-evenly">
                 {posts.map((post: PostProps) => {
-                    return <li key={post.id}><Link to={`/posts/${post.id}`} state={{id: post.id, title: post.title, text: post.text}}>{post.title}</Link></li>
+                    return <Item key={post.id}><Link to={`/posts/${post.id}`} state={{id: post.id, title: post.title, text: post.text}}>{post.title}</Link></Item>
                 })}
-            </ul>
+            </Menu>
 
             <Outlet/>
-        </div>
+        </PostsContainer>
     )
 }

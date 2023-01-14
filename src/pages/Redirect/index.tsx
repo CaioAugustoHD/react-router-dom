@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { Title } from "../../styles/title";
 
 export function Redirect() {
 
@@ -22,6 +23,6 @@ export function Redirect() {
     }, [time])
 
     return (
-        <h2>Get out of here in: {time}</h2>
+        <Title>Get out of here in: {time}</Title>
     )
 }

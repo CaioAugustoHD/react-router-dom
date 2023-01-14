@@ -1,25 +1,27 @@
 import { Link } from "react-router-dom"
+import { Item, Menu } from "../../styles/menu"
+import { HeaderContainer} from "./style"
 
 export function Header() {
     return (
-        <header>
-            <ul>
-                <li>
+        <HeaderContainer>
+            <Menu space="space-between">
+                <Item>
                     <Link to={"/"}>Home</Link>
-                </li>
-                <li>
+                </Item>
+                <Item>
                     <Link to={"/about"}>About</Link>
-                </li>
-                <li>
+                </Item>
+                <Item>
                     <Link to={"/contact"}>Contact</Link>
-                </li>
-                <li>
+                </Item>
+                <Item>
                     <Link to={"/posts"}>Posts</Link>
-                </li>
-                <li>
+                </Item>
+                <Item>
                     <Link to={"/redirect"}>Redirect</Link>
-                </li>
-            </ul>
-        </header>
+                </Item>
+            </Menu>
+        </HeaderContainer>
     )
 }

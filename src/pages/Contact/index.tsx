@@ -1,6 +1,7 @@
+import { Title } from "../../styles/title";
 
 export function Contact() {
     return (
-        <h2>Contact</h2>
+        <Title>Contact</Title>
     )
 }
