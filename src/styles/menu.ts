@@ -9,7 +9,7 @@ export const Menu = styled.ul<MenuProps>`
     display: flex;
     justify-content: ${(props) => props.space};
 
-    @media (max-width: 820px) {
+    @media (max-width: ${({theme}) => theme.breakpoint}) {
         justify-content: space-evenly
     }
 `;

@@ -7,6 +7,7 @@ declare module "styled-components" {
             menu: string,
             selected: string,
             text: string
-        }
+        },
+        breakpoint: string
     }
 };

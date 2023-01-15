@@ -6,5 +6,6 @@ export const defaultTheme : DefaultTheme = {
         menu: "#DEE2E6",
         selected: "#ADB5BD",
         text: "#F8F9FA"
-    }
+    },
+    breakpoint: "820px"
 };
